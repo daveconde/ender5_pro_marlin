@@ -12,4 +12,4 @@ git clone git@github.com:MarlinFirmware/Configurations.git
 git checkout release-2.0.9.3
 ```
 
-The contents of fixes.patch were then applied.
+The contents of [fixes.patch](fixes.patch) were then applied.
