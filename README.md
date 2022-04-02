@@ -1,6 +1,6 @@
 # Marlin Ender 5 Pro Config
 
-This repository contains a configuration to build Marlin for the [Ender 5 Pro](https://www.creality.com/goods-detail/ender-5-pro-3d-printer) with [BLTouch](https://www.amazon.co.uk/dp/B08S2YTQJY) for auto bed leveling for the V422 board without the bltouch adapter board. The one I am using is the V3.1 for 32 Bit V4.2.2/V4.2.7 Mainboard. There are a few different versions but the one linked above connects directly to the V4.2.2 mainboard and using the PB1 pin in the updated Marlin config in this repository.
+This repository contains a configuration to build Marlin for the [Ender 5 Pro](https://www.creality.com/goods-detail/ender-5-pro-3d-printer) with [BLTouch](https://www.amazon.co.uk/dp/B08S2YTQJY) for [auto bed leveling](https://all3dp.com/2/auto-leveling-3d-printer-do-i-really-need-it/) for the V422 board without the bltouch adapter board. The one I am using is the V3.1 for 32 Bit V4.2.2/V4.2.7 Mainboard. There are a few different versions but the one linked above connects directly to the V4.2.2 mainboard and using the PB1 pin in the updated Marlin config in this repository.
 
 To build run [./build.sh](build.sh) and copy the generated bin file to your SD card. 
 To flash to your Ender 5 pro just insert the SD card and turn on the Ender 5.
