@@ -1,0 +1,79 @@
+diff --git "a/./config/examples/Creality/Ender-3 V2/DWIN_SET/T5UIC1_V20_4\351\241\265\351\235\242_191022.BIN" "b/./config/examples/Creality/Ender-3 V2/DWIN_SET/T5UIC1_V20_4\351\241\265\351\235\242_191022.BIN"
+deleted file mode 100644
+index eac6b5ca03..0000000000
+Binary files "a/./config/examples/Creality/Ender-3 V2/DWIN_SET/T5UIC1_V20_4\351\241\265\351\235\242_191022.BIN" and /dev/null differ
+diff --git a/./config/examples/Creality/Ender-5 Pro/CrealityV422/Configuration.h b/../marlin/Configurations-2.0.9.3/config/examples/Creality/Ender-5 Pro/CrealityV422/Configuration.h
+index 8b1e12cfeb..0770f9afc3 100644
+--- a/./config/examples/Creality/Ender-5 Pro/CrealityV422/Configuration.h	
++++ b/../marlin/Configurations-2.0.9.3/config/examples/Creality/Ender-5 Pro/CrealityV422/Configuration.h	
+@@ -1033,10 +1033,10 @@
+  * The probe replaces the Z-MIN endstop and is used for Z homing.
+  * (Automatically enables USE_PROBE_FOR_Z_HOMING.)
+  */
+-#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
++//#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+ 
+ // Force the use of the probe for Z-axis homing
+-//#define USE_PROBE_FOR_Z_HOMING
++#define USE_PROBE_FOR_Z_HOMING
+ 
+ /**
+  * Z_MIN_PROBE_PIN
+@@ -1053,7 +1053,7 @@
+  *      - normally-closed switches to GND and D32.
+  *      - normally-open switches to 5V and D32.
+  */
+-//#define Z_MIN_PROBE_PIN 32 // Pin 32 is the RAMPS default
++#define Z_MIN_PROBE_PIN PB1 // Pin 32 is the RAMPS default
+ 
+ /**
+  * Probe Type
+@@ -1090,7 +1090,7 @@
+ /**
+  * The BLTouch probe uses a Hall effect sensor and emulates a servo.
+  */
+-//#define BLTOUCH
++#define BLTOUCH
+ 
+ /**
+  * Touch-MI Probe by hotends.fr
+@@ -1182,7 +1182,7 @@
+  *     |    [-]    |
+  *     O-- FRONT --+
+  */
+-#define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
++#define NOZZLE_TO_PROBE_OFFSET { -42, -5, 0 }
+ 
+ // Most probes should stay away from the edges of the bed, but
+ // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
+@@ -1548,7 +1548,7 @@
+  */
+ //#define AUTO_BED_LEVELING_3POINT
+ //#define AUTO_BED_LEVELING_LINEAR
+-//#define AUTO_BED_LEVELING_BILINEAR
++#define AUTO_BED_LEVELING_BILINEAR
+ //#define AUTO_BED_LEVELING_UBL
+ //#define MESH_BED_LEVELING
+ 
+@@ -1749,7 +1749,7 @@
+  * - Allows Z homing only when XY positions are known and trusted.
+  * - If stepper drivers sleep, XY homing may be required again before Z homing.
+  */
+-//#define Z_SAFE_HOMING
++#define Z_SAFE_HOMING
+ 
+ #if ENABLED(Z_SAFE_HOMING)
+   #define Z_SAFE_HOMING_X_POINT X_CENTER  // X point for Z homing
+diff --git a/./config/examples/Creality/Ender-5 Pro/CrealityV422/Configuration_adv.h b/../marlin/Configurations-2.0.9.3/config/examples/Creality/Ender-5 Pro/CrealityV422/Configuration_adv.h
+index 748a72d368..7c30f9cfb0 100644
+--- a/./config/examples/Creality/Ender-5 Pro/CrealityV422/Configuration_adv.h	
++++ b/../marlin/Configurations-2.0.9.3/config/examples/Creality/Ender-5 Pro/CrealityV422/Configuration_adv.h	
+@@ -3954,7 +3954,7 @@
+  * Host Prompt Support enables Marlin to use the host for user prompts so
+  * filament runout and other processes can be managed from the host side.
+  */
+-//#define HOST_ACTION_COMMANDS
++#define HOST_ACTION_COMMANDS
+ #if ENABLED(HOST_ACTION_COMMANDS)
+   //#define HOST_PAUSE_M76
+   //#define HOST_PROMPT_SUPPORT
