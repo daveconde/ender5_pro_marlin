@@ -25,7 +25,7 @@ You will need to calculate the z-offset for the BLTouch and save it on your prin
 
 # Using Cura
 
-I'm using [octoprint](https://octoprint.org/) on a Pi 4. When using with an Ender 5 Pro the USB on the Pi back feeds power to the printer. Using a USB power blocker [adapter](https://www.amazon.co.uk/PortaPow-USB-Power-Blocker-Cased/dp/B094FYL9QT) fixes the back powering.
+I'm using [octoprint](https://octoprint.org/) on a Pi 4 to wifi enable the 3d printer. Instructions to install octoprint can be found [here](https://octoprint.org/download/). When using with an Ender 5 Pro the USB on the Pi back feeds power to the printer. Using a USB power blocker [adapter](https://www.amazon.co.uk/PortaPow-USB-Power-Blocker-Cased/dp/B094FYL9QT) fixes the back powering.
 
 To use [Cura](https://ultimaker.com/software/ultimaker-cura) I installed [OctoPrint Connection Plugin](https://marketplace.ultimaker.com/app/cura/plugins/fieldofview/OctoPrintPlugin) via the Cura Marketplace. The printer needs to be added as a local Ender 5 and then configured under manage printers -> Connect to OctoPrint.
 
