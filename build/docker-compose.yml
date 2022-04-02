@@ -1,0 +1,15 @@
+version: "3.5"
+
+services:
+  build:
+    container_name: marlin-build
+    image: frealmyr/marlin-build@sha256:ab011a0d4a503984d7f4bf66e4d51ddf45a43f934b56ae131c38adc84e00997c
+    user: 1000:1000
+    stdin_open: true
+    tty: true
+    environment:
+      - BOARD=STM32F103RET6_creality
+      - USE_TAG=2.0.9.3 # Use a specific release tag
+    volumes:
+      - ./:/home/platformio/build
+      - ./../Configurations-2.0.9.3/config/examples/Creality/Ender-5 Pro/CrealityV422:/home/platformio/CustomConfiguration
